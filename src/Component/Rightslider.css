@@ -1,0 +1,95 @@
+.rightslider {
+  background: #f1f1f1;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.9s ease-in-out; /* Add a transition on the transform property */
+  transform: translateX(-100%); /* Start with the element in its original position */
+}
+
+.rightslider.active {
+  transform: translateX(0%); /* Move the element off-screen to the left */
+}
+
+
+.Friend {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.Friend-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.Friend-Transimmison {
+  display: flex;
+  align-items: center;
+}
+
+.video,
+.voice,
+.three-dot {
+  margin-right: 16px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.video:hover,
+.voice:hover,
+.three-dot:hover {
+  color: #764ba2;
+}
+
+.messagedisplay {
+  height: 405px;
+  /* overflow-y: auto; */
+  overflow-y: hidden;
+  width: auto;
+}
+
+/*
+
+.message-component {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.user-message-dasboard {
+  background: #f9e1e1;
+  height: calc(100% - 100px);
+  display: flex;
+}
+
+.user-Profile-message {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.user-Profile-message span {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.message-post {
+  display: flex;
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.message-post span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Add any other styles you want */

@@ -1,0 +1,40 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically in the center */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f0f0f0; /* Add a background color */
+  
+  /* background: linear-gradient(to right, #764ba2, #667eea); */
+}
+
+.paper-container {
+  display: flex;
+  width: 90%;
+  height: 90vh; /* Adjusted height for better visibility */
+  padding: 16px;
+  border-radius: 16px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(to right, #764ba2, #667eea);
+}
+/* Leftslider.css (or your Leftslider component styles) */
+.left-slider {
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+/* Animation for Leftslider */
+.left-slider.initial-animation {
+  width: 100%;
+}
+
+/* Rightslider.css (or your Rightslider component styles) */
+.right-slider {
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+/* Animation for Rightslider */
+.right-slider.initial-animation {
+  width: 100%;
+}
